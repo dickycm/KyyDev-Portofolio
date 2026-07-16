@@ -1,0 +1,73 @@
+.floating-badge{
+
+    position:absolute;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    padding:14px 20px;
+
+    border-radius:18px;
+
+    background:rgba(20,28,45,.72);
+
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.25);
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    animation:float 5s ease-in-out infinite;
+
+    z-index:20;
+
+}
+
+.floating-badge:hover{
+
+    transform:translateY(-5px) scale(1.05);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.35);
+
+}
+
+.floating-badge__icon{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:22px;
+
+}
+
+.floating-badge__text{
+
+    font-size:17px;
+
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}

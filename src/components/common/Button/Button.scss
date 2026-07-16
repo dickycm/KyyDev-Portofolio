@@ -1,0 +1,53 @@
+@use "../../../styles/abstracts/variables" as *;
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 28px;
+
+  border-radius: 999px;
+
+  font-weight: 600;
+
+  transition: .3s ease;
+
+  cursor: pointer;
+}
+
+/* Primary */
+
+.btn-primary{
+
+  background:$primary;
+
+  color:white;
+
+}
+
+.btn-primary:hover{
+
+  transform:translateY(-2px);
+
+  box-shadow:0 15px 40px rgba(110,168,254,.35);
+
+}
+
+/* Secondary */
+
+.btn-secondary{
+
+  background:transparent;
+
+  border:1px solid $border;
+
+  color:$text;
+
+}
+
+.btn-secondary:hover{
+
+  background:$surface-light;
+
+}

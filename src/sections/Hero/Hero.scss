@@ -1,0 +1,105 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.hero__left {
+  z-index: 2;
+}
+
+.hero__title {
+  font-size: 72px;
+  line-height: 1;
+}
+
+.hero__job {
+  margin-top: 15px;
+  font-size: 32px;
+  color: #6ea8fe;
+}
+
+.hero__description {
+  max-width: 550px;
+  margin-top: 25px;
+  color: #94a3b8;
+  line-height: 1.8;
+}
+
+/* ========================= */
+/* Hero Image */
+/* ========================= */
+
+.hero__right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 560px;
+  overflow: visible;
+}
+
+.hero__image {
+  position: relative;
+  width: 420px;
+  height: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========================= */
+/* Floating Badge Position */
+/* ========================= */
+
+.badge-javascript {
+  position: absolute;
+  top: 35px;
+  left: -20px;
+}
+
+.badge-mysql {
+  position: absolute;
+  top: 95px;
+  right: -30px;
+}
+
+.badge-php {
+  position: absolute;
+  bottom: 130px;
+  left: -35px;
+}
+
+.badge-postgresql {
+  position: absolute;
+  bottom: 40px;
+  right: -20px;
+}
+
+/* ========================= */
+/* Technology Colors */
+/* ========================= */
+
+.badge-javascript .floating-badge__text {
+  color: #f7df1e;
+}
+
+.badge-mysql .floating-badge__text {
+  color: #00758f;
+}
+
+.badge-php .floating-badge__text {
+  color: #777bb4;
+}
+
+.badge-postgresql .floating-badge__text {
+  color: #336791;
+}

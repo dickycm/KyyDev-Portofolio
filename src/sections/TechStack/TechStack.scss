@@ -1,0 +1,233 @@
+.tech-stack {
+  padding: 120px 0;
+}
+
+/* ========================================= */
+/* Header */
+/* ========================================= */
+
+.tech-stack__header {
+  max-width: 760px;
+  margin: 0 auto 90px;
+  text-align: center;
+}
+
+.tech-stack__subtitle {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  color: #6ea8fe;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.tech-stack__title {
+  margin-bottom: 20px;
+
+  font-size: 52px;
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.tech-stack__description {
+  color: #94a3b8;
+
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* ========================================= */
+/* Grid */
+/* ========================================= */
+
+.tech-grid {
+  display: grid;
+
+  grid-template-columns: 1.8fr 1fr 1fr;
+  grid-template-rows: 220px 220px 180px;
+
+  gap: 24px;
+}
+
+/* ========================================= */
+/* Card */
+/* ========================================= */
+
+.tech-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px;
+
+  overflow: hidden;
+
+  border-radius: 22px;
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  background: rgba(18,27,45,.75);
+
+  backdrop-filter: blur(16px);
+
+  transition: all .35s ease;
+}
+
+/* Glow */
+
+.tech-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: -80px;
+  right: -80px;
+
+  width: 180px;
+  height: 180px;
+
+  border-radius: 50%;
+
+  background: rgba(110,168,254,.08);
+
+  filter: blur(70px);
+
+  transition: .35s;
+}
+
+.tech-card:hover::before {
+  background: rgba(110,168,254,.18);
+}
+
+.tech-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(110,168,254,.35);
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,.35),
+    0 0 45px rgba(110,168,254,.08);
+}
+
+/* ========================================= */
+/* Card Header */
+/* ========================================= */
+
+.tech-card__top {
+  margin-bottom: 24px;
+}
+
+/* ========================================= */
+/* Card Title */
+/* ========================================= */
+
+.tech-card__title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 16px;
+}
+
+.tech-card__title svg {
+  width: 20px;
+  height: 20px;
+
+  color: #6ea8fe;
+
+  flex-shrink: 0;
+}
+
+.tech-card__title h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* ========================================= */
+/* Description */
+/* ========================================= */
+
+.tech-card__top p {
+  color: #94a3b8;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+/* ========================================= */
+/* Tags */
+/* ========================================= */
+
+.tech-tags {
+  margin-top: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.tech-tags span {
+  padding: 9px 18px;
+
+  border-radius: 999px;
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  background: rgba(255,255,255,.05);
+
+  color: #dbeafe;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  transition: all .3s ease;
+}
+
+.tech-tags span:hover {
+  background: #6ea8fe;
+
+  color: #fff;
+
+  transform: translateY(-2px);
+}
+
+/* ========================================= */
+/* Grid Position */
+/* ========================================= */
+
+.tech-card--frontend {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.tech-card--backend {
+  grid-column: 2 / span 2;
+  grid-row: 1;
+}
+
+.tech-card--database {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.tech-card--deployment {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.tech-card--design {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}

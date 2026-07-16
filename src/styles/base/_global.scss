@@ -1,0 +1,35 @@
+@use "../abstracts/variables" as *;
+
+body {
+  background: $background;
+  color: $text;
+}
+
+/* Root App */
+#root {
+  min-height: 100vh;
+}
+
+/* Selection */
+::selection {
+  background: $primary;
+  color: white;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $background;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $surface-light;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $primary;
+}
