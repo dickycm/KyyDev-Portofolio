@@ -26,9 +26,8 @@ function ProjectCard() {
 
         <div className="project-card__tags">
 
-          <span>React</span>
           <span>Laravel</span>
-          <span>PostgreSQL</span>
+          <span>MySQL</span>
 
         </div>
 
